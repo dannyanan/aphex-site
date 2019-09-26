@@ -149,13 +149,16 @@ img {
 }
 
 img.big {
-    width: 95%;
+    width: 100%;
 }
 
 h6 {
     font-family: "Space Grotesk";
     font-weight: 400;
     font-size: 16px;
+}
+
+h6.half {
     max-width: 49%;
 }
 
@@ -170,6 +173,7 @@ header {
     grid-gap: 25px;
     place-items: center;
     place-content: center;
+    height: 90vh;
 }
 
 header img {
@@ -208,6 +212,10 @@ header img {
     background: var(--pink);
 }
 
+#monochrome-alts img {
+    width: 100%;
+}
+
 #type-spec-outline {
     background: black;
 }
@@ -235,6 +243,9 @@ header img {
     background: var(--blue);
 }
 
+#try-it {
+    background: var(--yellow);
+}
 
 @media screen and (min-width: 600px) {
 

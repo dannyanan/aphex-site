@@ -100,7 +100,7 @@
 
 /* THE RULES */
 
-body, div, section, article, aside {
+body, div, section, article, aside, footer {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -132,7 +132,7 @@ ul {
     text-align: center;
 }
 
-header, main, section, article {
+header, main, section, article, footer {
     margin: 0 auto;
     padding: 50px;
 }
@@ -179,6 +179,7 @@ header {
 header img {
     width: 80%;
     max-width: 600px;
+    margin: 0 auto;
 }
 
 #description {
@@ -243,8 +244,44 @@ header img {
     background: var(--blue);
 }
 
-#try-it {
+footer {
     background: var(--yellow);
+    text-align: center;
+}
+
+footer h1, h2 {
+    margin-bottom: 25px;
+}
+
+footer h2 {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+footer a {
+    display: block;
+    padding: 20px 40px;
+    background: white;
+    border-radius: 100px;
+    font-family: 'Aphex Color';
+    text-transform: uppercase;
+    font-size: 30px;
+    transition: .25s ease-in-out;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+footer a:hover {
+    background: var(--pink);
+    transition: .25s ease-in-out;
+    cursor: pointer;
+}
+
+footer p.smallprint {
+    font-size: 12px;
+    max-width: 550px;
+    margin: 25px auto;
 }
 
 @media screen and (min-width: 600px) {
@@ -288,6 +325,11 @@ header img {
         grid-template-columns: 1fr 1.5fr 1fr;
         grid-template-rows: auto;
         align-items: center;
+    }
+
+    footer a {
+        font-size: 60px;
+        padding: 30px 60px;
     }
 
 

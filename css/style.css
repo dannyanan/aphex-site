@@ -270,12 +270,14 @@ footer a {
     text-align: center;
     margin: 0 auto;
     max-width: 600px;
+    color: var(--blue);
 }
 
 footer a:hover {
     background: var(--pink);
     transition: .25s ease-in-out;
     cursor: pointer;
+    color: var(--green);
 }
 
 footer p.smallprint {
